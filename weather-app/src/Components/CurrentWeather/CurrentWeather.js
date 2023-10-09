@@ -1,5 +1,5 @@
 import { WiStrongWind, WiHumidity } from "react-icons/wi";
-import { BsThermometerSun } from "react-icons/bs";
+import { PiThermometerDuotone } from "react-icons/pi";
 
 const CurrentWeather = ({ data }) => {
   return (
@@ -26,7 +26,7 @@ const CurrentWeather = ({ data }) => {
         <div className="details flex flex-row justify-between items-center p-2 mt-10">
           <div className="parameter-row flex flex-col items-center">
             <span className="parameter-label font-medium text-sm">
-              <BsThermometerSun size={32} />
+              <PiThermometerDuotone size={32} />
             </span>
             <span className="parameter-value text-sm text-gray-500 pt-2">
               {Math.round(data.main.feels_like)} °C
